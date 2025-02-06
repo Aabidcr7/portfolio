@@ -1,11 +1,10 @@
-
-
-import  React from "react"
-import { useEffect, useRef, useState } from "react"
+import React from "react";
+import { useEffect, useRef, useState } from "react";
 import bodhi1 from "../assets/bodhi.png";
 import bodhi2 from "../assets/bodhi2.PNG";
 import bodhi4 from "../assets/bodhi4.PNG";
-import "./CreativePage.css"
+import bodhi3 from "../assets/bodhiOverview.png"; // new image
+import "./CreativePage.css";
 
 const sections = [
   {
@@ -58,7 +57,8 @@ const sections = [
   {
     id: "competitive-programming",
     title: "Competitive Programming",
-    content: "Sharpen your problem-solving skills with our competitive programming challenges and tutorials.",
+    content:
+      "Sharpen your problem-solving skills with our competitive programming challenges and tutorials.",
   },
   {
     id: "game-development",
@@ -83,91 +83,111 @@ const sections = [
     content:
       "We're grateful to our open-source contributors and the broader programming community for their support and valuable input.",
   },
-]
+];
 
 const CreativePage = () => {
-    const [activeSection, setActiveSection] = useState("");
-    const sectionRefs = useRef({});
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY + 100;
-        for (const section of sections) {
-          const element = sectionRefs.current[section.id];
-          if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
-            setActiveSection(section.id);
-            break;
-          }
+  const [activeSection, setActiveSection] = useState("");
+  const sectionRefs = useRef({});
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 100;
+      for (const section of sections) {
+        const element = sectionRefs.current[section.id];
+        if (element && element.offsetTop <= scrollPosition && element.offsetTop + element.offsetHeight > scrollPosition) {
+          setActiveSection(section.id);
+          break;
         }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-  
-    const scrollToSection = (sectionId) => {
-      setActiveSection(sectionId);
-      const element = sectionRefs.current[sectionId];
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
       }
     };
-  
-    return (
-      <div className="creative-page">
-        
-  
-        <div className="div1">
-          <div className="imgdiv"> 
-            <img src={bodhi1} alt="bodhi" className="hero-image" />
-            <img src={bodhi2} alt="bodhi" className="hero-image" /></div>
-          
-          <h1>Bodhi</h1>
-          <p>Bodhi is a tutor-finding app designed to bridge the educational gap for rural students while providing tutors with flexible teaching opportunities and income generation.</p>
-          <div className="stats-links">
-            <span>1406 views -</span>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-            <i className="fa-brands fa-github"></i> Github -
-            </a>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-link"></i>Live Site
-            </a>
-          </div>
-          <div>
-          <img src={bodhi4} alt="bodhi" className="hero-image" />
-          <p>Unleash your full learning potential with Bodhi,  where the
-pursuit of knowledge meets effortless discovery. Say
-goodbye to the search struggle and hello to tailored, top-
-notch tutoring, right at your fingertips. Welcome to a 
-smarter way to excel academically.</p>
-         
-          </div>
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    setActiveSection(sectionId);
+    const element = sectionRefs.current[sectionId];
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="creative-page">
+      <div className="div1">
+        <div className="imgdiv">
+          <img src={bodhi1} alt="bodhi" className="hero-image" />
+          <img src={bodhi2} alt="bodhi" className="hero-image" />
         </div>
-        <hr/>
-  
-        <div className="content-wrapper">
-          <div className="div2">
-            {sections.map((section) => (
-              <div key={section.id} ref={(el) => (sectionRefs.current[section.id] = el)} className={`section ${activeSection === section.id ? "active" : ""}`}>
-                <h2>{section.title}</h2>
-                <p>{section.content}</p>
-              </div>
-            ))}
-          </div>
-  
-          <div className="div3">
-            <h3>Table of Contents</h3>
-            <ul>
-              {sections.map((section) => (
-                <li key={section.id} className={activeSection === section.id ? "active" : ""} onClick={() => scrollToSection(section.id)}>
-                  {section.title}
-                </li>
-              ))}
-            </ul>
-          </div>
+
+        <h1>Bodhi</h1>
+        <p>
+          Bodhi is a tutor-finding app designed to bridge the educational gap for rural students while providing tutors with flexible teaching opportunities and income generation.
+        </p>
+        <div className="stats-links">
+          <span>1406 views -</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-brands fa-github"></i> Github -
+          </a>
+          <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+            <i className="fa-solid fa-link"></i>Live Site
+          </a>
+        </div>
+        <div>
+          <img src={bodhi4} alt="bodhi" className="hero-image" />
+          <p>
+            Unleash your full learning potential with Bodhi, where the pursuit of knowledge meets effortless discovery. Say goodbye to the search struggle and hello to tailored, top-notch tutoring, right at your fingertips. Welcome to a smarter way to excel academically.
+          </p>
         </div>
       </div>
-    );
-  };
-  
-  export default CreativePage;
+      <hr />
+
+      <div className="content-wrapper">
+        <div className="div2">
+          {/* Add the new section */}
+          <p className="heading">Why I Started This Project</p>
+          <div className="content-with-image">
+            <div className="content-text">
+              <p className="description">
+                I embarked on the journey of creating tutor finding app driven by a profound concern for the educational challenges
+that many rural students encounter. Witnessing their determination to excel academically despite the scarcity of
+proper guidance deeply inspired me. This endeavor is rooted in the belief that every student, regardless of their
+geographic location, deserves access to high-quality educational support, personalized learning, flexible 
+scheduling. By developing this platform, I aim to bridge the educational divide, empowering rural students with the
+resources they need to thrive in their academic journey. For tutors It creates wide range of teaching opportunity
+Income generation, flexible scheduling. Overall, the dual approach can create a symbiotic relationship where tutor
+benefits from a broader pool of students, and students gain access to diverse selection of qualified educators, 
+enriching the overall learning experience on my platform. In summary, a dual approach tutor finding app creates a
+win-win scenario.</p>
+            </div>
+            <div className="content-image">
+              <img src={bodhi3} alt="bodhi" className="hero-image" />
+            </div>
+            
+          </div>
+          
+          {sections.map((section) => (
+            <div key={section.id} ref={(el) => (sectionRefs.current[section.id] = el)} className={`section ${activeSection === section.id ? "active" : ""}`}>
+              <h2>{section.title}</h2>
+              <p>{section.content}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="div3">
+          <h3>Table of Contents</h3>
+          <ul>
+            {sections.map((section) => (
+              <li key={section.id} className={activeSection === section.id ? "active" : ""} onClick={() => scrollToSection(section.id)}>
+                {section.title}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CreativePage;
