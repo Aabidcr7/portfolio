@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
     {/* Logo on the left */}
-    <div className="logo">A</div>
+    <div className="logo">HARI</div>
 
     {/* Navigation items on the right */}
     <div className="nav-items">
