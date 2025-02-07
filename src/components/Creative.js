@@ -637,7 +637,9 @@ User Interface design of the app here.
         </div>
 
         <div className="div3">
-          <h3>Table of Contents</h3>
+        <h3 style={{ fontSize: '1.5rem', marginBottom: '12px' }}>Table of Contents</h3>
+
+          <h3>
           <ul>
             <li onClick={() => scrollToSection("Why I Started This Project")}>Why I Started This Project</li>
             <li onClick={() => scrollToSection("Project Overview")}>Project Overview</li>
@@ -661,6 +663,7 @@ User Interface design of the app here.
             <li onClick={() => scrollToSection("All Mobile Screen")}>All Mobile Screen</li>
             <li onClick={() => scrollToSection("website Screen")}>website Screen</li>
           </ul>
+          </h3>
         </div>
       </div>
     </div>
