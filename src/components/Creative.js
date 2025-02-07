@@ -85,7 +85,10 @@ const CreativePage = () => {
           <img src={bodhi1} alt="bodhi" className="hero-image" />
           <img src={bodhi2} alt="bodhi" className="hero-image" />
         </div>
-        <h1>Bodhi - Ignite learning Ignite success</h1>
+        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: 700 }}>
+  Bodhi - Ignite Learning, Ignite Success
+</h1>
+
         <p>
           Bodhi is a tutor-finding app designed to bridge the educational gap for rural students while providing tutors with flexible teaching opportunities and income generation.
         </p>

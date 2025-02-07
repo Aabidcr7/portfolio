@@ -118,11 +118,6 @@ body {
   border-radius: 10px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
 
 .stats-links {
   display: flex;
