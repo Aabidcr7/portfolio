@@ -300,6 +300,7 @@ body {
 .portfolio-tech:hover {
     background-color: var(--tech-text);
     color: var(--tech-bg);
+    cursor: pointer;
 }
 
 /* Project description */

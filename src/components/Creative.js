@@ -114,7 +114,7 @@ const CreativePage = () => {
       <div className="content-wrapper">
         <div className="div2">
           <div ref={(el) => (sectionRefs.current["Why I Started This Project"] = el)} className="section">
-            <h2>Why I Started This Project</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Why I Started This Project</h2>
             <p>
             I embarked on the journey of creating tutor finding app driven by a profound concern for the educational challenges
 that many rural students encounter. Witnessing their determination to excel academically despite the scarcity of
@@ -131,7 +131,7 @@ win-win scenario.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Project Overview"] = el)} className="section">
-            <h2>Project Overview</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Project Overview</h2>
             <p>
             Finding tutor is a very common problem in our country. Students are
 struggling to get tutor who can accommodate the student’s schedule
@@ -155,7 +155,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Problem Statement"] = el)} className="section">
-            <h2>Problem Statement</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Problem Statement</h2>
             <ul>
       <li style={{ marginBottom: '10px' }}>Limited Tutor Options: Without a tutor finding app, rural students may have fewer options when it comes to selecting a tutor with expertise in specific subjects or topics.</li>
       <li style={{ marginBottom: '10px' }}>Travel Constraints: Travelling to urban areas for tutoring sessions can be time-consuming and expensive.</li>
@@ -178,7 +178,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Possible Solution"] = el)} className="section">
-            <h2>Possible Solution</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Possible Solution</h2>
             <ul>
       <li style={{ marginBottom: '10px' }}>
         Creating a convenient digital platform for finding tuition.
@@ -221,7 +221,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Design Process"] = el)} className="section">
-            <h2>Design Process</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Design Process</h2>
        
             <img 
   src={bodhi7} 
@@ -232,7 +232,7 @@ User Interface design of the app here.
 
           </div>
           <div ref={(el) => (sectionRefs.current["Project Timeline"] = el)} className="section">
-            <h2>Project Timeline</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Project Timeline</h2>
        
             <img 
   src={bodhi8} 
@@ -244,7 +244,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Responses of Qualitative & Quantitative Analysis"] = el)} className="section">
-            <h2>Responses of Qualitative & Quantitative Analysis</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Responses of Qualitative & Quantitative Analysis</h2>
        <h3>01 Teacher</h3>
        <img 
   src={bodhi9} 
@@ -289,7 +289,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["User Persona"] = el)} className="section">
-            <h2>User Persona</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">User Persona</h2>
 
             <h3>01 Teacher</h3>
        
@@ -312,7 +312,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Empathy Map"] = el)} className="section">
-            <h2>Empathy Map</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Empathy Map</h2>
 
             <h3>01 Teacher</h3>
        
@@ -334,7 +334,7 @@ User Interface design of the app here.
 
           </div>
           <div ref={(el) => (sectionRefs.current["Competitive Analysis"] = el)} className="section">
-            <h2>Competitive Analysis</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Competitive Analysis</h2>
        
             <img 
   src={bodhi19} 
@@ -346,7 +346,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["User Journey Map"] = el)} className="section">
-            <h2>User Journey Map</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">User Journey Map</h2>
 
             <h3>Priya's Board Exam Preparation</h3>
       <p><strong>Name:</strong> Priya</p>
@@ -377,7 +377,7 @@ User Interface design of the app here.
 
 </div>
 <div ref={(el) => (sectionRefs.current["Information Architecture"] = el)} className="section">
-            <h2>Information Architecture</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Information Architecture</h2>
        
             <img 
   src={bodhi22} 
@@ -390,7 +390,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["User Flow"] = el)} className="section">
-            <h2>User Flow</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">User Flow</h2>
             <h3>Hire a tutor</h3>
        
             <img 
@@ -404,7 +404,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Task Flow"] = el)} className="section">
-            <h2>Task Flow</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Task Flow</h2>
             <h3>To Track Student Progress</h3>
        
             <img 
@@ -418,7 +418,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Low Fidelity WireFrame"] = el)} className="section">
-            <h2>Low Fidelity WireFrame</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Low Fidelity WireFrame</h2>
           
        
             <img 
@@ -432,7 +432,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Style Guide"] = el)} className="section">
-            <h2>Style Guide</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Style Guide</h2>
           
        
             <img 
@@ -446,7 +446,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Medium Fidelity WireFrame"] = el)} className="section">
-            <h2>Medium Fidelity WireFrame</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Medium Fidelity WireFrame</h2>
           
        
             <img 
@@ -460,7 +460,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Usability Testing Result"] = el)} className="section">
-            <h2>Usability Testing Result</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Usability Testing Result</h2>
           
        
             <img 
@@ -480,7 +480,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["Screen Details"] = el)} className="section">
-            <h2>Screen Details</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">Screen Details</h2>
 
             <h3>Onboarding Screens</h3>
        
@@ -576,7 +576,7 @@ User Interface design of the app here.
 
 
           <div ref={(el) => (sectionRefs.current["All Mobile Screen"] = el)} className="section">
-            <h2>All Mobile Screen</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight">All Mobile Screen</h2>
           
        
             <img 
@@ -590,7 +590,7 @@ User Interface design of the app here.
           </div>
 
           <div ref={(el) => (sectionRefs.current["website Screen"] = el)} className="section">
-            <h2>website Screen</h2>
+            <h2 className="border-l-4 border-green-500 pl-2 leading-tight leading-tight">website Screen</h2>
           
        <h3>Onboarding Screens</h3>
             <img 
